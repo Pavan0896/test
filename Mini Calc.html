@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Claculator</title>
+    <style>
+        #operations{
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <div>
+            <input type="text" placeholder="enter 1st number" id = "first">
+            <input type="text" placeholder="enter 2nd number" id = "second">
+        </div>
+        <div id="operations">
+            <button onclick="add()">Add</button>
+            <button onclick="subtract()">Subtract</button>
+            <button onclick="multiply()">Multiply</button>
+            <button onclick="divide()">Divide</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("first");
+    var b = document.getElementById("second");
+    
+    function add(){
+        alert(Number(a.value)+Number(b.value));
+    }
+
+    function subtract(){
+        alert(Number(a.value)-Number(b.value));
+    }
+
+    function multiply(){
+        alert(Number(a.value)*Number(b.value));
+    }
+
+    function divide(){
+        alert(Number(a.value)/Number(b.value));
+    }
+   
+    
+</script>
